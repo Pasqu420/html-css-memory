@@ -15,13 +15,13 @@ body{
   background-color: rgba(0,191,255, 0.5);
 }
 
-.prima-fila{
-  background-color: white;
+.row{
   margin: auto;
   width: 73.5%;
+  height: 35vh;
 }
 
-.prima-fila section{
+.row section{
   position: relative;
   margin-top: 5vh;
 }
@@ -30,17 +30,18 @@ div.card-front{
   background-color: white;
   border-radius: 5%;
   margin-left: 4.5%;
-  height: 40vh;
+  height: 35vh;
   position: relative;
+  display: inline-block;
 }
 
-.card-front img{
+img{
   width: 14vw;
-  height: 30vh;
+  height: 25vh;
 }
 
 span{
-  font-size: 4vh;
+  font-size: 3vh;
   position: absolute;
   top:78%;
   left: 0%;
@@ -52,35 +53,35 @@ span{
   display: none;
 }
 
-/* PRIMA FILA */
-div.card-front.one, .card-back.one{
-  position: absolute;
-  top: 0%;
-  right: 75%;
-}
-
-div.card-front.two, .card-back.two{
-  position: absolute;
-  top: 0%;
-  right: 52%;
-}
-
-div.card-front.three, .card-back.three{
-  position: absolute;
-  top: 0%;
-  right: 29.5%;
-}
-
-div.card-front.four, .card-back.four{
-  position: absolute;
-  top: 0%;
-  right: 7%;
-}
-
 div.card-back img{
   background-size: 90%;
   background-color: blue;
   border-radius: 5%;
   width: 14vw;
-  height: 40vh;
+  height: 35vh;
+  border: 2px solid black;
+}
+/* PRIMA FILA */
+div.one, .card-back.one{
+  position: absolute;
+  top: 0%;
+  right: 75%;
+}
+
+div.two, .card-back.two{
+  position: absolute;
+  top: 0%;
+  right: 52%;
+}
+
+div.three, .card-back.three{
+  position: absolute;
+  top: 0%;
+  right: 29.5%;
+}
+
+div.four, .card-back.four{
+  position: absolute;
+  top: 0%;
+  right: 7%;
 }

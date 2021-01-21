@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Coda Caption', sans-serif;
 }
 
 header{
@@ -26,6 +27,7 @@ body{
   margin-top: 5vh;
 }
 
+/* REGOLE CARD */
 div.card-front{
   background-color: white;
   border-radius: 5%;
@@ -54,14 +56,12 @@ span{
 }
 
 div.card-back img{
-  background-size: 90%;
   background-color: blue;
   border-radius: 5%;
   width: 14vw;
   height: 35vh;
-  border: 2px solid black;
 }
-/* PRIMA FILA */
+
 div.one, .card-back.one{
   position: absolute;
   top: 0%;
@@ -84,4 +84,14 @@ div.four, .card-back.four{
   position: absolute;
   top: 0%;
   right: 7%;
+}
+
+footer{
+  font-size: 2vh;
+  text-align: center;
+  margin: 5vh 0vw;
+}
+
+a{
+  text-decoration: none;
 }

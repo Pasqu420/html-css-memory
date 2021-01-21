@@ -1,0 +1,86 @@
+/* REGOLE GENERALI */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  font-size: 4.5vh;
+  text-align: center;
+  margin-top: 1.5vh;
+}
+
+body{
+  background-color: rgba(0,191,255, 0.5);
+}
+
+.prima-fila{
+  background-color: white;
+  margin: auto;
+  width: 73.5%;
+}
+
+.prima-fila section{
+  position: relative;
+  margin-top: 5vh;
+}
+
+div.card-front{
+  background-color: white;
+  border-radius: 5%;
+  margin-left: 4.5%;
+  height: 40vh;
+  position: relative;
+}
+
+.card-front img{
+  width: 14vw;
+  height: 30vh;
+}
+
+span{
+  font-size: 4vh;
+  position: absolute;
+  top:78%;
+  left: 0%;
+  width: 14vw;
+  text-align: center;
+}
+
+.card-back:hover{
+  display: none;
+}
+
+/* PRIMA FILA */
+div.card-front.one, .card-back.one{
+  position: absolute;
+  top: 0%;
+  right: 75%;
+}
+
+div.card-front.two, .card-back.two{
+  position: absolute;
+  top: 0%;
+  right: 52%;
+}
+
+div.card-front.three, .card-back.three{
+  position: absolute;
+  top: 0%;
+  right: 29.5%;
+}
+
+div.card-front.four, .card-back.four{
+  position: absolute;
+  top: 0%;
+  right: 7%;
+}
+
+div.card-back img{
+  background-size: 90%;
+  background-color: blue;
+  border-radius: 5%;
+  width: 14vw;
+  height: 40vh;
+}

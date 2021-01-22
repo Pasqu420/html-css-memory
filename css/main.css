@@ -7,9 +7,9 @@
 }
 
 header{
-  font-size: 4.5vh;
+  font-size: calc(2vw + 2px );
   text-align: center;
-  margin-top: 1.5vh;
+  margin-top: 1vh;
   color: rgb(210,105,30);
 }
 
@@ -17,85 +17,88 @@ body{
   background-color: rgba(0,191,255, 0.5);
 }
 
-.row{
+.container{
   margin: auto;
-  width: 73.5%;
-  height: 35vh;
+  width: 70%;
+  height: 80vh;
 }
 
-.row section{
-  position: relative;
+.container div{
   margin-top: 5vh;
+  border-radius: 10%;
 }
 
-/* REGOLE CARD */
-div.card-front{
-  background-color: white;
-  border-radius: 5%;
+/* REGOLE CARTE */
 
-  height: 35vh;
-  position: relative;
+.card{
+  background-image: url(../img/pattern.png);
+  background-size: contain;
+  border-radius: 10%;
   display: inline-block;
+  margin-left: 8.5%;
+  position: relative;
+  width: 10vw;
+  height: 21vh;
+  background-color: white;
 }
+
+/* CARTA BALLOON */
+
+.card-balloon{
+  border-radius: 10%;
+  display: inline-block;
+  margin-left: 8.5%;
+  position: relative;
+  width: 10vw;
+  height: 21vh;
+  background-color: white;
+}
+
+.card-balloon img{
+  width: 10vw;
+  display: block;
+}
+
+#balloon{
+  display: block;
+}
+
+#balloon:hover{
+  color: rgba(130,0,147, 0.5);
+}
+/* FINE BALLOON */
 
 img{
-  width: 14vw;
-  height: 25vh;
+  width: 10vw;
+  height: 16vh;
+  margin: auto;
 }
 
 span{
-  font-size: 4vh;
+  font-size: 1.5vw;
   position: absolute;
-  top:78%;
-  left: 0%;
-  width: 14vw;
-  text-align: center;
+  top: 75%;
+  left: 17%;
   color: rgb(210,105,30);
-}
-
-.card-back:hover{
   display: none;
 }
 
-.balloon:hover{
-  color: blue;
+.card img{
+  display: none;
 }
 
-div.card-back img{
-  background-color: blue;
-  border-radius: 5%;
-  width: 14vw;
-  height: 35vh;
+.card:hover{
+  background-image: none;
 }
 
-div.one, .card-back.one{
-  position: absolute;
-  top: 0%;
-  right: 75%;
-}
-
-div.two, .card-back.two{
-  position: absolute;
-  top: 0%;
-  right: 52%;
-}
-
-div.three, .card-back.three{
-  position: absolute;
-  top: 0%;
-  right: 29.5%;
-}
-
-div.four, .card-back.four{
-  position: absolute;
-  top: 0%;
-  right: 7%;
+.card:hover img, .card:hover span {
+  display: block;
 }
 
 footer{
   font-size: 2vh;
   text-align: center;
-  margin: 5vh 0vw;
+  margin: 2vh 0vw;
 }
 
 h2 a{

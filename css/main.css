@@ -3,13 +3,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nerko One', cursive;
 }
 
 header{
   font-size: 4.5vh;
   text-align: center;
   margin-top: 1.5vh;
+  color: rgb(210,105,30);
 }
 
 body{
@@ -31,7 +32,7 @@ body{
 div.card-front{
   background-color: white;
   border-radius: 5%;
-  margin-left: 4.5%;
+
   height: 35vh;
   position: relative;
   display: inline-block;
@@ -43,16 +44,21 @@ img{
 }
 
 span{
-  font-size: 3vh;
+  font-size: 4vh;
   position: absolute;
   top:78%;
   left: 0%;
   width: 14vw;
   text-align: center;
+  color: rgb(210,105,30);
 }
 
 .card-back:hover{
   display: none;
+}
+
+.balloon:hover{
+  color: blue;
 }
 
 div.card-back img{
@@ -92,6 +98,7 @@ footer{
   margin: 5vh 0vw;
 }
 
-a{
+h2 a{
   text-decoration: none;
+  color: rgb(210,105,30);
 }
